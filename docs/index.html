@@ -5,141 +5,193 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-    <head>
-        <title>Hyperspace by HTML5 UP</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-        <style>
-            .circular-image {
-                width: 30%;
-                margin: 0 auto;
-                overflow: hidden;
-            }
 
-            .circular-image img {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-        </style>
-    </head>
-    <body class="is-preload">
+<head>
+	<title>Hyperspace by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		.circular-image {
+			width: 30%;
+			margin: 0 auto;
+			overflow: hidden;
+		}
 
-        <!-- Sidebar -->
-        <section id="sidebar">
-            <div class="inner">
-                <nav>
-                    <ul>
-                        <li><a href="#intro">Welcome</a></li>
-                        <li><a href="#one">About Me</a></li>
-                        <li><a href="#two">Portfolio</a></li>
-                        <li><a href="#three">Get in touch</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+		.circular-image img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
 
-        <!-- Wrapper -->
-        <div id="wrapper">
+		.portfolio-image-container {
+			max-width: 100%;
+		}
 
-            <!-- Intro -->
-            <section id="intro" class="wrapper style1 fullscreen fade-up">
-                <div class="inner">
-                    <!-- Circular Image -->
-                    <div class="circular-image">
-                        <img src="images/Harry Garwood Circular.png" alt="Circular Image" />
-                    </div>
-                    <h1><center>Harry Garwood</center></h1>
-					<h2><center>Data Scientist / Analyst / Enthusiast</center></h2>
-                </div>
-            </section>
+		.portfolio-image {
+			width: 100%;
+			height: auto;
+			cursor: pointer;
+			transition: transform 0.3s ease-in-out;
+		}
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<div class="content">
-								<div class="inner">
-									<h2>About Me</h2>
-									<p>A keen, professional data analyst and aspiring data scientist. With over 8 years of experience in data related roles, I have leveraged data for driving business outcomes ranging from spreadsheet summaries of key business insights, to architecting bespoke data pipelines for seamless management of diverse data sources. I am a firm believer in utilising the power of data to achieve meaningful results which drives my passion in continuously upskilling and advancing my knowledge even further.</p>
-								</div>
-							</div>
-						</section>
-					</section>
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Data Science Portfolio</h2>
-							<p>The below highlights represent key projects in my data science portfolio, cultivated through personal and academic endeavors. The link to the entire GitHub repos is as follows: <a href="https://github.com/harrygarwood/Data-Science-Portfolio.git">https://github.com/harrygarwood/Data-Science-Portfolio.git</a></p>
-							<div class="features">
-								<section>
-									<h3><a href="https://github.com/harrygarwood/Data-Science-Portfolio/tree/5356292b53c23be9f2848343488634c820d57c09/Analysing%20the%20Success%20of%20the%20UK%20COVID-19%20Vaccination%20Strategy">Analysing the Success of the UK Covid-19 Vaccination Strategy</a></h3>
-									<p>I compared the effectiveness of the UK's Covid-19 vaccination strategy to Denmark and Italy, focusing on vaccination rates, deaths, and hospitalisations. Additionally, I analysed the peformance by the regions of the UK. The study provides valuable insights into the diverse impacts of vaccination strategies, contributing to the broader conversation on global pandemic response.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-						</div>
-					</section>
+		.portfolio-image:hover {
+			transform: scale(2);
+		}
+	</style>
+</head>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Phone</h3>
-											<span>07472 585 095</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">harrygarwood@outlook.com</a>
-										</li>
-										<li>
-											<h3>LinkedIn</h3>
-											<a href="https://uk.linkedin.com/in/harry-garwood-25827215a">https://uk.linkedin.com/in/harry-garwood-25827215a</a>
-										</li>
-										<li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+<body class="is-preload">
 
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#intro">Welcome</a></li>
+					<li><a href="#one">About Me</a></li>
+					<li><a href="#two">Portfolio</a></li>
+					<li><a href="#three">Get in touch</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Intro -->
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<!-- Circular Image -->
+				<div class="circular-image">
+					<img src="images/Harry Garwood Circular.png" alt="Circular Image" />
+				</div>
+				<h1>
+					<center>Harry Garwood</center>
+				</h1>
+				<h2>
+					<center>Data Scientist / Analyst / Enthusiast</center>
+				</h2>
 			</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		</section>
 
-	</body>
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<div class="content">
+					<div class="inner">
+						<h2>About Me</h2>
+						<p>A keen, professional data analyst and aspiring data scientist. With over 8 years of
+							experience in data related roles, I have leveraged data for driving business outcomes
+							ranging from spreadsheet summaries of key business insights, to architecting bespoke data
+							pipelines for seamless management of diverse data sources. </p>
+						<p>I am a firm believer in utilising the power of data to achieve meaningful results which
+							drives my passion in continuously upskilling and advancing my knowledge even further.</p>
+					</div>
+				</div>
+			</section>
+		</section>
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Data Science Portfolio</h2>
+				<p>The below highlights represent key projects in my data science portfolio, cultivated through personal
+					and academic endeavors. The link to the entire GitHub repos is as follows: <a
+						href="https://github.com/harrygarwood/Data-Science-Portfolio.git">https://github.com/harrygarwood/Data-Science-Portfolio.git</a>
+				</p>
+				<div class="features">
+					<section>
+						<h3><a
+								href="https://github.com/harrygarwood/Data-Science-Portfolio/tree/e67bef84d717b581bf7d4d9a68c50a91ba2f32f6/Analysing%20the%20Success%20of%20the%20UK%20COVID-19%20Vaccination%20Strategy">Analysing
+								the Success of the UK Covid-19 Vaccination Strategy</a></h3>
+						<p>I compared the effectiveness of the UK's Covid-19 vaccination strategy to Denmark and Italy,
+							focusing on vaccination rates, deaths, and hospitalisations. Additionally, I analysed the
+							performance by the regions of the UK. The study provides valuable insights into the diverse
+							impacts of vaccination strategies, contributing to the broader conversation on global
+							pandemic response.</p>
+						<div class="portfolio-image-container">
+							<a href="images/HospitalisationsEngland.png" target="_blank">
+								<img src="images/HospitalisationsEngland.png" alt="Project Image"
+									class="portfolio-image">
+							</a>
+						</div>
+					</section>
+
+					<section>
+						<h3><a
+								href="https://github.com/harrygarwood/Data-Science-Portfolio/tree/e67bef84d717b581bf7d4d9a68c50a91ba2f32f6/Designing%20a%20Relational%20Database%20for%20Classroom%20Observations">Designing
+								a Relational Database for Classroom Observations</a></h3>
+						<p>I designed a relational database dedicated to recording and reporting school classroom
+							observations for a specific education provider. Additionally, a comprehensive report
+							detailing the benefits derived from the implementation of the proposed relational database
+							has been created.</p>
+							<div class="portfolio-image-container">
+								<a href="images/Classroom Observations Relational Database.png" target="_blank">
+									<img src="images/Classroom Observations Relational Database.png" alt="Project Image"
+										class="portfolio-image">
+								</a>
+							</div>
+					</section>
+					<section>
+						<h3><a
+								href="https://github.com/harrygarwood/Data-Science-Portfolio/tree/e67bef84d717b581bf7d4d9a68c50a91ba2f32f6/Current%20and%20Potential%20Utilisation%20of%20Cloud%20Computing%20for%20a%20Further%20Education%20Provider">Report
+								on Cloud Computing Within an Education Provider</a></h3>
+						<p>I created a detailed report which examines the use of cloud technology within a specific
+							further education provider and explores opportunities for its further utilization to benefit
+							the organisation.</p>
+					</section>
+					<section>
+						<h3><a href="https://github.com/harrygarwood/Data-Science-Portfolio/tree/e67bef84d717b581bf7d4d9a68c50a91ba2f32f6/Information%20Systems%20in%20the%20UK%20Education%20Sector">Report on Information Systems in the UK Education Sector</a></h3>
+						<p>This project delves into the importance of information systems in the UK Education Sector. It specifically examines their role within a chosen further education provider, highlighting both the positive and negative impacts on various aspects of the business.</p>
+					</section>
+				</div>
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section id="three" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Get in touch</h2>
+				<section>
+					<ul class="contact">
+						<li>
+							<h3>Phone</h3>
+							<span>07472 585 095</span>
+						</li>
+						<li>
+							<h3>Email</h3>
+							<a href="#">harrygarwood@outlook.com</a>
+						</li>
+						<li>
+							<h3>Curriculum Vitae</h3>
+							<a href="https://docs.google.com/document/d/1U3CafcQjUhtvS2c35tB6VdMwp4Q1r1n134-oPWgVXzs/edit?usp=sharing">Harry Garwood - CV</a>
+						</li>
+						<li>
+							<h3>LinkedIn</h3>
+							<a
+								href="https://uk.linkedin.com/in/harry-garwood-25827215a">https://uk.linkedin.com/in/harry-garwood-25827215a</a>
+						</li>
+						<li>
+					</ul>
+				</section>
+			</div>
+	</div>
+	</section>
+
+	</div>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
