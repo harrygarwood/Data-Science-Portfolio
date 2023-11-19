@@ -1,0 +1,2 @@
+# Designing a Relational Database for Classroom Observations
+In this project, I designed a relational database dedicated to recording and reporting school classroom observations for a specific education provider. Additionally, a comprehensive report detailing the benefits derived from the implementation of the proposed relational database has been created. To preserve confidentiality, the provider's name has been omitted and is denoted as [OMITTED FOR ANONYMITY] in the document.
